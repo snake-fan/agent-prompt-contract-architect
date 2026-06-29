@@ -1,0 +1,28 @@
+{
+  "name": "agent-prompt-contract-architect",
+  "version": "0.1.0",
+  "description": "A project-local agent skill for generating structured system prompt templates.",
+  "type": "module",
+  "bin": {
+    "agent-prompt-contract-architect": "bin/install-skill.mjs",
+    "install-agent-prompt-contract-skill": "bin/install-skill.mjs"
+  },
+  "files": [
+    ".claude-plugin/plugin.json",
+    "bin/",
+    "skill/",
+    "README.md"
+  ],
+  "scripts": {
+    "install:dry-run": "node bin/install-skill.mjs --dry-run",
+    "pack:dry-run": "npm --cache ./.npm-cache pack --dry-run"
+  },
+  "keywords": [
+    "agent",
+    "skill",
+    "prompt",
+    "system-prompt",
+    "codex"
+  ],
+  "license": "UNLICENSED"
+}
